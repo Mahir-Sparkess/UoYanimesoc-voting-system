@@ -30,11 +30,11 @@ with open('Slot A.csv', 'w') as csvfile:
 with open('Slot B.csv', 'w') as csvfile:
     filewriter = csv.writer(csvfile,delimiter=',')
     filewriter.writerow(['Title','MAL Link','Description'])
-    for row in slotA:
+    for row in slotB:
         filewriter.writerow([row[0],row[1],row[2]])
 
 with open('Slot C.csv', 'w') as csvfile:
     filewriter = csv.writer(csvfile,delimiter=',')
     filewriter.writerow(['Title','MAL Link','Description'])
-    for row in slotA:
+    for row in slotC:
         filewriter.writerow([row[0],row[1],row[2]])
