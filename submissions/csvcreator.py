@@ -20,5 +20,4 @@ with open('submissions/AnimeSoc Termly Anime Nomination Form (Responses) - Form 
                 slotC.append([row[currentitem],row[currentitem+1],row[currentitem+3]])
 
             currentitem+=4
-for row in slotC:
-    print(row[0])
+
