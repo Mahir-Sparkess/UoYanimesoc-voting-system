@@ -21,3 +21,20 @@ with open('submissions/AnimeSoc Termly Anime Nomination Form (Responses) - Form 
 
             currentitem+=4
 
+with open('Slot A.csv', 'w') as csvfile:
+    filewriter = csv.writer(csvfile,delimiter=',')
+    filewriter.writerow(['Title','MAL Link','Description'])
+    for row in slotA:
+        filewriter.writerow([row[0],row[1],row[2]])
+
+with open('Slot B.csv', 'w') as csvfile:
+    filewriter = csv.writer(csvfile,delimiter=',')
+    filewriter.writerow(['Title','MAL Link','Description'])
+    for row in slotA:
+        filewriter.writerow([row[0],row[1],row[2]])
+
+with open('Slot C.csv', 'w') as csvfile:
+    filewriter = csv.writer(csvfile,delimiter=',')
+    filewriter.writerow(['Title','MAL Link','Description'])
+    for row in slotA:
+        filewriter.writerow([row[0],row[1],row[2]])
