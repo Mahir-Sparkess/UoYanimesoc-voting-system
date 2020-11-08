@@ -13,14 +13,13 @@ with open('submissions/AnimeSoc Termly Anime Nomination Form (Responses) - Form 
 
     for row in readCSV:
         currentitem = 4
-        id = ''
-        for i in row[currentitem+1]:
-            if str.isdigit(i):
-                id=id+i
-            if i == '/' and len(id) > 1:
-                break
-        
         while currentitem <= 16:
+            id = ''
+            for i in row[currentitem+1]:
+                if str.isdigit(i):
+                    id=id+i
+                if i == '/' and len(id) > 1:
+                    break
             if row[currentitem+2] == 'Slot A':
                 slotA.append([row[currentitem],row[currentitem+1],str(row[currentitem+3]).replace("'","\'"),jikan.anime(id).get("image_url"),jikan.anime(id).get("synopsis").replace("'","\'")])
             elif row[currentitem+2] == 'Slot B':
